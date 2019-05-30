@@ -1,8 +1,6 @@
 pipeline {
   agent any
-  parameters {
-        string(name: 'SVNCHKOUTURL', defaultValue: 'test', description: 'How should I greet the world?')
-    }
+  
   stages {
     stage('build') {
       steps {
